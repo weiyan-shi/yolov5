@@ -4,7 +4,7 @@ import torch
 model = torch.hub.load("ultralytics/yolov5", "yolov5s")  # or yolov5n - yolov5x6, custom
 
 # Images
-img = "/app/Desktop/Dataset/1/frames/108.jpg"  # or file, Path, PIL, OpenCV, numpy, list
+img = "/app/Desktop/Dataset/pcit4/frames/6.jpg"  # or file, Path, PIL, OpenCV, numpy, list
 
 # Inference
 results = model(img)
@@ -19,4 +19,4 @@ detections = results.pandas().xyxy[0]
 print(detections)
 
 # 保存带有物体边框的图片（默认路径：`runs/detect/exp`）
-results.save()
+results.save('runs/detect/exp')
