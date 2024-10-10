@@ -7,7 +7,7 @@ model = torch.hub.load(
 )  # load from PyTorch Hub (WARNING: inference not yet supported)
 
 # 加载图片
-img = '/app/Desktop/Dataset/1/frames/20.jpg'
+img = '/app/Desktop/Dataset/1/frames/9.jpg'
 
 # 进行推理，包括分割和检测
 results = model(img)
